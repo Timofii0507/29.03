@@ -4,9 +4,63 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_29._03"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="CV" Height="550" Width="800"
+        WindowStartupLocation="CenterScreen" Icon="Assets/logo.ico">
 
+    <Grid Background="Black">
+        <Grid.Resources>
+            <Style TargetType="TextBlock">
+                <Setter Property="Margin" Value="0,5"/>
+            </Style>
+        </Grid.Resources>
+
+        <TextBlock Text="Резюме" FontWeight="Bold" FontSize="24" Foreground="White" HorizontalAlignment="Center" Margin="0,10"/>
+
+        <StackPanel Margin="20" Background="#333333">
+            <Image Source="C:\Users\Tymofii\source\repos\29.03\29.03\Assets\IMG_20220828_204232_677.jpg" Width="100" Height="100" HorizontalAlignment="Left" Margin="0,10"/>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Ім'я: Тимофій" Foreground="White"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Фамілія: Юрков" Foreground="White"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <materialDesign:PackIcon Kind="Email" Margin="0,5" Foreground="White"/>
+                <TextBlock Text="timofiiyurkov@gmail.com" Foreground="White"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <materialDesign:PackIcon Kind="Phone" Margin="0,5" Foreground="White"/>
+                <TextBlock Text="+380962330708" Foreground="White"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <materialDesign:PackIcon Kind="Calendar" Margin="0,5" Foreground="White"/>
+                <TextBlock Text="Вік: 16" Foreground="White"/>
+            </StackPanel>
+
+            <TextBlock Text="Про себе:" FontWeight="Bold" Foreground="White"/>
+            <TextBlock TextWrapping="Wrap" Foreground="White">
+                Молодий та амбіційний програміст, зацікавлений у розробці програмного забезпечення. Шукаю можливість розвинути свої навички та надати свій внесок у проекти, які створюють значний вплив.
+            </TextBlock>
+
+            <TextBlock Text="Хобі:" FontWeight="Bold" Foreground="White" Margin="0,10"/>
+            <StackPanel Orientation="Horizontal">
+                <materialDesign:PackIcon Kind="CodeTags" Margin="0,5" Foreground="White"/>
+                <TextBlock Text="Програмування" Foreground="White"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <materialDesign:PackIcon Kind="Palette" Margin="0,5" Foreground="White"/>
+                <TextBlock Text="Дизайн" Foreground="White"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <materialDesign:PackIcon Kind="Horse" Margin="0,5" Foreground="White"/>
+                <TextBlock Text="Верхова їзда" Foreground="White"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <materialDesign:PackIcon Kind="Security" Margin="0,5" Foreground="White"/>
+                <TextBlock Text="Кібербезпека" Foreground="White"/>
+            </StackPanel>
+        </StackPanel>
     </Grid>
 </Window>
